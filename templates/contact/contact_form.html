@@ -1,0 +1,20 @@
+<html> 
+<head> 
+    <title>Свяжитесь с нами</title> 
+</head> 
+<body> 
+    <h1>Свяжитесь с нами</h1>
+    {% if form.errors %} 
+	    <p style="color: red;">
+            Исправьте следующие ошибки{{ form.errors|pluralize }}
+        </p>
+    {% endif %}
+	
+    <form action="" method="post"> 
+        <table> 
+            {{ form.as_table }} 
+        </table>
+        <input type="submit" value="0тправить"> 
+</form> 
+</body>
+</html> 

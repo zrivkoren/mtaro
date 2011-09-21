@@ -1,0 +1,17 @@
+{% extends "taro/base.html" %} 
+{% block title %}Все карты{% endblock %} 
+{% block content %} 
+<p>На этой странице перечислены все карты колоды Ошо Дзен Таро: <br> 
+{% if all_cards %}    
+    {% for card in all_cards %}
+        {{ card.name }}
+		<br><a target="_blank" href="{{ card.id }}">
+        <img src="http://mtaro.ru/img/small/{{ card.small_icon_url }}.jpg"/> 		
+		</a>
+		<br>
+    {% endfor %}    
+{% else %}
+    <p>No cards are available.</p>
+{% endif %}
+</p>
+{% endblock %} 

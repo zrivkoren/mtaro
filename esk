@@ -1,0 +1,112 @@
+Help on class TaroCard in module taro.models:
+
+class TTaarrooCCaarrdd(django.db.models.base.Model)
+ |  TaroCard(id, name, details, small_icon_url, big_icon_url)
+ |  
+ |  Method resolution order:
+ |      TaroCard
+ |      django.db.models.base.Model
+ |      __builtin__.object
+ |  
+ |  Methods defined here:
+ |  
+ |  ____uunniiccooddee____(self)
+ |  
+ |  ----------------------------------------------------------------------
+ |  Data and other attributes defined here:
+ |  
+ |  DDooeessNNoottEExxiisstt = <class 'taro.models.DoesNotExist'>
+ |  
+ |  
+ |  MMuullttiipplleeOObbjjeeccttssRReettuurrnneedd = <class 'taro.models.MultipleObjectsReturned'...
+ |  
+ |  
+ |  oobbjjeeccttss = <django.db.models.manager.Manager object>
+ |  
+ |  ----------------------------------------------------------------------
+ |  Methods inherited from django.db.models.base.Model:
+ |  
+ |  ____eeqq____(self, other)
+ |  
+ |  ____hhaasshh____(self)
+ |  
+ |  ____iinniitt____(self, *args, **kwargs)
+ |  
+ |  ____nnee____(self, other)
+ |  
+ |  ____rreedduuccee____(self)
+ |      Provide pickling support. Normally, this just dispatches to Python's
+ |      standard handling. However, for models with deferred field loading, we
+ |      need to do things manually, as they're dynamically created classes and
+ |      only module-level classes can be pickled by the default path.
+ |  
+ |  ____rreepprr____(self)
+ |  
+ |  ____ssttrr____(self)
+ |  
+ |  cclleeaann(self)
+ |      Hook for doing any extra model-wide validation after clean() has been
+ |      called on every field by self.clean_fields. Any ValidationError raised
+ |      by this method will not be associated with a particular field; it will
+ |      have a special-case association with the field defined by NON_FIELD_ERRORS.
+ |  
+ |  cclleeaann__ffiieellddss(self, exclude=None)
+ |      Cleans all fields and raises a ValidationError containing message_dict
+ |      of all validation errors if any occur.
+ |  
+ |  ddaattee__eerrrroorr__mmeessssaaggee(self, lookup_type, field, unique_for)
+ |  
+ |  ddeelleettee(self, using=None)
+ |  
+ |  ffuullll__cclleeaann(self, exclude=None)
+ |      Calls clean_fields, clean, and validate_unique, on the model,
+ |      and raises a ``ValidationError`` for any errors that occured.
+ |  
+ |  pprreeppaarree__ddaattaabbaassee__ssaavvee(self, unused)
+ |  
+ |  ssaavvee(self, force_insert=False, force_update=False, using=None)
+ |      Saves the current instance. Override this in a subclass if you want to
+ |      control the saving process.
+ |      
+ |      The 'force_insert' and 'force_update' parameters can be used to insist
+ |      that the "save" must be an SQL insert or update (or equivalent for
+ |      non-SQL backends), respectively. Normally, they should not be set.
+ |  
+ |  ssaavvee__bbaassee(self, raw=False, cls=None, origin=None, force_insert=False, force_update=False, using=None)
+ |      Does the heavy-lifting involved in saving. Subclasses shouldn't need to
+ |      override this method. It's separate from save() in order to hide the
+ |      need for overrides of save() to pass around internal-only parameters
+ |      ('raw', 'cls', and 'origin').
+ |  
+ |  sseerriiaalliizzaabbllee__vvaalluuee(self, field_name)
+ |      Returns the value of the field name for this instance. If the field is
+ |      a foreign key, returns the id value, instead of the object. If there's
+ |      no Field object with this name on the model, the model attribute's
+ |      value is returned directly.
+ |      
+ |      Used to serialize a field's value (in the serializer, or form output,
+ |      for example). Normally, you would just access the attribute directly
+ |      and not use this method.
+ |  
+ |  uunniiqquuee__eerrrroorr__mmeessssaaggee(self, model_class, unique_check)
+ |  
+ |  vvaalliiddaattee__uunniiqquuee(self, exclude=None)
+ |      Checks unique constraints on the model and raises ``ValidationError``
+ |      if any failed.
+ |  
+ |  ----------------------------------------------------------------------
+ |  Data descriptors inherited from django.db.models.base.Model:
+ |  
+ |  ____ddiicctt____
+ |      dictionary for instance variables (if defined)
+ |  
+ |  ____wweeaakkrreeff____
+ |      list of weak references to the object (if defined)
+ |  
+ |  ppkk
+ |  
+ |  ----------------------------------------------------------------------
+ |  Data and other attributes inherited from django.db.models.base.Model:
+ |  
+ |  ____mmeettaaccllaassss____ = <class 'django.db.models.base.ModelBase'>
+ |      Metaclass for all models.

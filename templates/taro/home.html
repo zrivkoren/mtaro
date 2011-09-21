@@ -1,0 +1,18 @@
+{% extends "taro/base.html" %} 
+{% block title %}Главная страница{% endblock %} 
+{% block content %} 
+<p>Тестовый вывод всех карт на главную страницу : <br>
+{% if all_cards_in_home %}
+    <ul>
+    {% for card in all_cards_in_home %}
+        <li>{{ card.name }}</li>
+       
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No cards are available.</p>
+{% endif %}
+
+
+</p>
+{% endblock %} 
